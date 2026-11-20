@@ -32,9 +32,9 @@
 ;Consulta si elos nodos son vacios
 (define (hoja-bt? btree)
   ;y si es vacio el izq de la lista
-  (and (vacio-bt (izq-bt btree))
+  (and (vacio-bt? (izq-bt btree))
        ; o el derecho de la lista
-       (vacio-bt (der-bt btree))))
+       (vacio-bt? (der-bt btree))))
 
 
 ;;OPERADORES o metodos
@@ -69,4 +69,4 @@
               (izq-bt bt) ;inserte en derecho y enlace izquierdo
               (insertar-bt x (der-bt bt))))
     ;cond 4
-    ((= x (dato-bt bt) bt)))) ;si ya esta solo devuelva el valor no agregue 
+    ((= x (dato-bt bt)) bt))) ;si ya esta solo devuelva el valor no agregue 

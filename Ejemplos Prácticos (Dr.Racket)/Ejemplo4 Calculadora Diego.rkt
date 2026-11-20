@@ -25,5 +25,5 @@
 
 (define suma (lambda(a b) (+ a b)))
 (define resta (lambda(a b) (- a b)))
-(define div (lambda(a b) (/ a b)))
+(define div (lambda (a b) (if (= b 0) (error 'div "No se puede dividir entre cero") (/ a b))))
 (define mult (lambda(a b) (* a b)))

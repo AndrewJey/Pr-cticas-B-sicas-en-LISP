@@ -25,3 +25,11 @@ Abre los fuentes en DrRacket y selecciona el lenguaje que declara cada archivo. 
 
 Identifica el dialecto de los ejercicios y prepara su intérprete o compilador. Common Lisp, Scheme y AutoLISP tienen entornos distintos; el editor por sí solo no determina cuál corresponde al fuente.
 <!-- platform-tools:end -->
+
+
+<!-- improvements-20261119:start -->
+## Mejoras y verificación — 2026-11-19 (Corrección de árboles binarios Racket y guarda de división por cero)
+
+- **Cambios:** Corregido `hoja-bt?` (`vacio-bt` -> `vacio-bt?`) y `insertar-bt` en los 3 ejercicios de árbol binario de Dr.Racket, y añadida validación de división entre cero en `Ejemplo4 Calculadora Diego.rkt`.
+- **Validación:** Validador de S-expresiones en 12/12 archivos `.rkt`/`.lisp` (incl. `8-puzzle.lisp`), paréntesis balanceados y 0 bugs `vacio-bt`/`insertar-bt`.
+<!-- improvements-20261119:end -->
